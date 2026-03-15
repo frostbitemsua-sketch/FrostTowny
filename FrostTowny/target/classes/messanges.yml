@@ -1,0 +1,278 @@
+# ===========================================
+# FrostTowny Messages v1.0.0
+# All messages support color codes (&a, &c, etc.)
+# Placeholders: {0}, {1}, {2}, etc.
+#  🔥 Premium Bukkit/Nukkit Plugins! Custom development available. Contact @maizeslava8 on Discord!
+# ===========================================
+
+# Command messages
+command:
+  only-ingame: "&cThis command can only be used in-game!"
+  unknown: "&cUnknown command!"
+  usage-prefix: "&cUsage: {0}"
+  town-not-found: "&cTown not found!"
+  player-not-found: "&cPlayer not found!"
+  invalid-number: "&cInvalid number!"
+  cooldown: "&eWait {0} seconds!"
+  no-permission: "&cNo permission!"
+
+# Town creation
+town:
+  create:
+    already-exists: "&cTown already exists!"
+    already-in-town: "&cYou're already in a town!"
+    invalid-name: "&cInvalid town name!"
+    too-close: "&cToo close to another town!"
+    not-enough-money: "&cNeed ${0}!"
+    success: "&aTown {0} created!"
+
+  delete:
+    confirmation: "&eType &6/town delete confirm"
+    not-mayor: "&cOnly mayor can delete!"
+    success: "&aTown deleted!"
+
+  info:
+    header: "&6=== {0} ==="
+    mayor: "&eMayor: &f{0}"
+    created: "&eCreated: &f{0} ago"
+    balance: "&eBalance: &a${0}"
+    tax: "&eTax: &f{0}%"
+    chunks: "&eChunks: &f{0}"
+    residents: "&eResidents: &f{0}/{1}"
+    description: "&7{0}"
+    tag: "&eTag: &f[{0}]"
+    rank: "&eYour rank: &f{0}"
+    not-in-town: "&cYou are not in a town!"
+
+  join:
+    success: "&aJoined {0}!"
+    notify: "&e{0} joined!"
+    failed: "&cFailed to join!"
+
+  leave:
+    success: "&aYou left!"
+    failed: "&cFailed to leave!"
+    mayor-cant-leave: "&cMayor cannot leave!"
+
+  invite:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    invited: "&aInvited {0}!"
+    invite-received: "&aInvited to {0}!"
+
+  kick:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    success: "&aKicked {0}!"
+    kicked: "&cKicked from {0}!"
+    notify: "&e{0} kicked!"
+    cannot-kick-mayor: "&cCannot kick mayor!"
+
+  ban:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    not-resident: "&c{0} not resident!"
+    cannot-ban-mayor: "&cCannot ban mayor!"
+    success: "&aBanned {0}!"
+    banned: "&cBanned from {0}!"
+
+  unban:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    not-banned: "&c{0} not banned!"
+    success: "&aUnbanned {0}!"
+
+  claim:
+    not-in-town: "&cYou are not in a town!"
+    no-permission-claim: "&cNo permission!"
+    max-chunks: "&cMax {0} chunks!"
+    cost: "&cNeed ${0}!"
+    already-claimed: "&cAlready claimed!"
+    not-adjacent: "&cNot adjacent!"
+    too-far: "&cToo far!"
+    success: "&aChunk claimed!"
+
+  unclaim:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    not-claimed: "&cNot your chunk!"
+    home-chunk: "&cCannot unclaim home!"
+    success: "&aChunk unclaimed!"
+
+  deposit:
+    invalid-amount: "&cInvalid amount!"
+    too-much: "&cMax ${0}!"
+    not-enough-money: "&cNot enough money!"
+    success: "&aDeposited ${0}! Balance: ${1}"
+
+  withdraw:
+    no-permission-withdraw: "&cNo permission!"
+    not-enough-balance: "&cNot enough balance!"
+    too-much: "&cMax ${0}!"
+    success: "&aWithdrew ${0}! Balance: ${1}"
+
+  balance:
+    not-in-town: "&cYou are not in a town!"
+    header: "&6=== Town Balance ==="
+    town-name: "&eTown: &f{0}"
+    balance: "&eBalance: &a${0}"
+    chunks: "&eChunks: &f{0}"
+    next-tax: "&eNext tax: &c${0}"
+
+  tax:
+    mayor-only: "&cMayor only!"
+    invalid-rate: "&cInvalid rate!"
+    set: "&aTax set to {0}%!"
+    notify: "&eTax changed to {0}%!"
+
+  home:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    no-permission-home: "&cMust be in town!"
+    not-set: "&cHome not set!"
+    cooldown: "&eWait {0} seconds!"
+    set: "&aHome set!"
+    teleported: "&aTeleported!"
+
+  assistant:
+    not-in-town: "&cYou are not in a town!"
+    mayor-only: "&cMayor only!"
+    not-resident: "&c{0} not resident!"
+    add-success: "&a{0} promoted!"
+    remove-success: "&a{0} demoted!"
+    promoted: "&aYou are Assistant!"
+    demoted: "&cAssistant removed!"
+    failed: "&cFailed!"
+
+  deputy:
+    not-in-town: "&cYou are not in a town!"
+    mayor-only: "&cMayor only!"
+    not-resident: "&c{0} not resident!"
+    add-success: "&a{0} promoted!"
+    remove-success: "&a{0} demoted!"
+    promoted: "&aYou are Deputy!"
+    demoted: "&cDeputy removed!"
+    failed: "&cFailed!"
+
+  transfer:
+    not-in-town: "&cYou are not in a town!"
+    mayor-only: "&cMayor only!"
+    not-resident: "&c{0} not resident!"
+    self: "&cCannot transfer to self!"
+    success: "&aTransferred to {0}!"
+    received: "&aYou are now mayor!"
+    notify: "&eLeadership transferred!"
+
+  war:
+    not-in-town: "&cYou are not in a town!"
+    mayor-only: "&cOnly mayor can!"
+    declared: "&cWar on {0}!"
+    declared-notify: "&cWar on {0}!"
+    received: "&c{0} declared war!"
+    failed: "&cFailed to declare war!"
+
+  peace:
+    not-in-town: "&cYou are not in a town!"
+    no-permission-peace: "&cNo permission!"
+    made: "&aPeace with {0}!"
+    made-notify: "&aPeace with {0}!"
+    received: "&a{0} wants peace!"
+    auto: "&7War with {0} ended."
+
+  ally:
+    not-in-town: "&cYou are not in a town!"
+    no-permission: "&cNo permission!"
+    add-success: "&aAllied with {0}!"
+    remove-success: "&aNo longer allied!"
+    added: "&aNow allied!"
+    removed: "&cAlliance broken!"
+
+  description:
+    no-permission: "&cNo permission!"
+    too-long: "&cMax {0} chars!"
+    set: "&aDescription updated!"
+
+  tag:
+    no-permission: "&cNo permission!"
+    invalid: "&cInvalid tag!"
+    set: "&aTag set to [{0}]!"
+
+  plot:
+    no-permission-plot: "&cNo permission!"
+    not-town-chunk: "&cNot town chunk!"
+    receiver-not-resident: "&cPlayer not in town!"
+    max-plots: "&cMax {0} plots!"
+    give-success: "&aPlot given!"
+    received: "&aYou got a plot!"
+    not-private: "&cNot private plot!"
+    take-success: "&aPlot taken!"
+    taken: "&cPlot taken!"
+    info: "&6=== Plot Information ==="
+    private: "&eOwner: &f{0}"
+    public: "&aPublic land"
+    your-plot: "&aYour private plot!"
+    not-your-plot: "&cPrivate plot!"
+    can-build: "&aYou can build"
+    cannot-build: "&cCannot build!"
+    unclaimed: "&7Unclaimed land"
+
+  list:
+    no-towns: "&cNo towns!"
+    header: "&6=== Town List ({0}) ==="
+    format: "&e{0}. &f{1} &7({2} res., ${3})"
+    page: "&7Page &e{0}&7/&e{1}"
+
+  top:
+    header-balance: "&6=== Top by Balance ==="
+    header-residents: "&6=== Top by Residents ==="
+    format: "&e{0}. &f{1} &7- &a${2} &7({3} res.)"
+
+  bankruptcy: "&cTown bankrupt! Chunks unclaimed."
+
+# Event messages
+event:
+  block-break:
+    denied: "&cCannot break here!"
+    enemy-territory: "&cCannot break in enemy!"
+
+  block-place:
+    denied: "&cCannot place here!"
+    enemy-territory: "&cCannot place in enemy!"
+
+  chest-access:
+    denied: "&cCannot access containers!"
+
+  door-access:
+    denied: "&cCannot use doors!"
+
+  trapdoor-access:
+    denied: "&cCannot use trapdoors!"
+
+  fence-gate-access:
+    denied: "&cCannot use gates!"
+
+  interact:
+    denied: "&cCannot interact!"
+
+  pvp:
+    denied: "&cPvP disabled!"
+    enemy-pvp: "&cYou can attack enemies!"
+    ally: "&cCannot attack allies!"
+    same-town: "&cCannot attack own town!"
+    not-resident: "&cOnly residents can PvP!"
+
+  enter-town:
+    title: "&6{0}"
+    subtitle: "&eTag: &f[{0}]"
+    chat: "&eEntering {0} [{1}]"
+    enemy: "&cEnemy territory!"
+
+  leave-town:
+    chat: "&7Leaving {0}"
+
+# Error messages
+error:
+  generic: "&cAn error occurred!"
+  economy-not-found: "&cEconomyAPI not found!"
+  data-load: "&cFailed to load data!"
+  data-save: "&cFailed to save data!"
